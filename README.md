@@ -1,7 +1,7 @@
 # QRCode Grabber
 An easy way to get your discord token on phone . Coded in JS &amp; Html
 
-# Contributor
+# Contributors
 | User           | Github                          | Contributed to           |
 |----------------|---------------------------------|--------------------------|
 | Freiik         | https://github.com/FreiikDev    | Obfuscation & Part of JS |
