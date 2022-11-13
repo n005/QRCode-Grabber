@@ -1,4 +1,9 @@
-# QRCode Grabber
+# QRCode Grabber - ARCHIVE
+
+## DOES NOT WORK ANYMORE
+
+----
+
 An easy way to get your discord token on phone . Coded in JS &amp; Html
 
 
